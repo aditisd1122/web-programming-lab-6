@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What We Discover</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #62636e, #3d3e49);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .page {
+            width: 100%;
+            max-width: 1200px;
+            min-height: 90vh;
+            text-align: center;
+            padding: 55px 60px;
+            border: 1px solid rgba(255,255,255,0.25);
+            border-radius: 18px;
+            background: rgba(50, 51, 61, 0.25);
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 13px 28px;
+            border: 1px solid #c987f5;
+            border-radius: 30px;
+            color: #d59bff;
+            letter-spacing: 4px;
+            font-size: 14px;
+            margin-bottom: 28px;
+        }
+
+        h1 {
+            font-size: 58px;
+            line-height: 1.1;
+            margin-bottom: 22px;
+        }
+
+        h1 span {
+            color: #c87ff5;
+        }
+
+        .intro {
+            max-width: 760px;
+            margin: auto;
+            color: #dddddf;
+            font-size: 19px;
+            line-height: 1.7;
+            margin-bottom: 55px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 31%;
+            min-width: 250px;
+            min-height: 210px;
+            padding: 32px 25px;
+            border: 1.5px solid #9e65c7;
+            border-radius: 22px;
+            background: rgba(45, 46, 56, 0.45);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #d18aff;
+            box-shadow: 0 10px 30px rgba(190, 110, 255, 0.18);
+        }
+
+        .number {
+            font-size: 18px;
+            color: #d18aff;
+            font-weight: bold;
+            margin-bottom: 18px;
+        }
+
+        .card h2 {
+            color: #e2b7ff;
+            font-size: 27px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #d5d5d8;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .buttons {
+            margin-top: 45px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        button {
+            padding: 13px 30px;
+            border-radius: 30px;
+            border: 1px solid #c987f5;
+            background: transparent;
+            color: #d89bff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #c987f5;
+            color: white;
+        }
+
+        @media (max-width: 800px) {
+            h1 {
+                font-size: 42px;
+            }
+
+            .page {
+                padding: 40px 20px;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+
+        <div class="tag">✦ DISCOVER MORE</div>
+
+        <h1>
+            Explore. <span>Discover.</span><br>
+            Understand.
+        </h1>
+
+        <p class="intro">
+            Every new discovery helps us understand the world better.
+            Explore ideas, learn from experiences, and discover new
+            possibilities along the way.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="number">01</div>
+                <h2>Explore</h2>
+                <p>
+                    Discover new ideas, concepts and possibilities
+                    by looking beyond what is already known.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="number">02</div>
+                <h2>Understand</h2>
+                <p>
+                    Learn from information and experiences to
+                    build a clearer understanding.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="number">03</div>
+                <h2>Imagine</h2>
+                <p>
+                    Use what you learn to think differently and
+                    create meaningful new ideas.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="buttons">
+            <button onclick="history.back()">← Back</button>
+
+            <button onclick="window.location.href='page3.html'">
+                Next Page →
+            </button>
+        </div>
+
+    </div>
+
+</body>
+</html>
